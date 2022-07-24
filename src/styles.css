@@ -1,0 +1,47 @@
+* {
+    font-family: monospace;
+    box-sizing: border-box;
+}
+
+body {
+    user-select: none;
+    text-align: center;
+}
+
+#todoForm{
+    padding: 5px 0px;
+}
+
+#todoList{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#todoInput {
+    color:blue;
+}
+h3 {
+    color:orange
+}
+
+.todoInput{
+    outline: none;
+    border: none;
+}
+
+.done{
+    text-decoration: line-through;
+    color: gray;
+}
+
+.toggleButton{
+    color: blue;
+}
+.editButton{
+    color: orange;
+}
+.deleteButton{
+    color: red;
+}
+
