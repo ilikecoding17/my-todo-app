@@ -35,12 +35,23 @@ h3 {
     color: gray;
 }
 
+.colour{
+    text-decoration: underline;
+    color: darkgreen;
+}
+
+
 .toggleButton{
     color: blue;
 }
 .editButton{
     color: orange;
 }
+.impButton{
+    color: rgb(37, 207, 49);
+}
+
+
 .deleteButton{
     color: red;
 }

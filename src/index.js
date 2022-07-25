@@ -31,11 +31,18 @@ todoListForm.addEventListener("submit",(event)=>{
     deleteButton.textContent = "delete"
     deleteButton.className = "deleteButton"
 
+    const impButton = document.createElement("button")
+    impButton.textContent = "important"
+    impButton.className = "impButton"
+
+
     todoList.append(todoItem)
     todoItem.append(todoInput)
     todoItem.append(toggleButton)
     todoItem.append(editButton)
+    todoItem.append(impButton)
     todoItem.append(deleteButton)
+   
 
     toggleButton.addEventListener("click",()=>{
         todoInput.classList.toggle("done")
@@ -52,6 +59,11 @@ todoListForm.addEventListener("submit",(event)=>{
         }
     })
 
+    impButton.addEventListener("click",()=>{
+        todoInput.classList.toggle("colour")
+    })
+    
+    
     deleteButton.addEventListener("click", ()=>{
         todoItem.remove()
     })
